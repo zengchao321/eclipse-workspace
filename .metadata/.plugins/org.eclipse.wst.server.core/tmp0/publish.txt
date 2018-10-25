@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Oct 07 20:14:45 CST 2018
+org.eclipse.jst.jee.server\:cloud_note=C\:\\soft01\\apache-tomcat-7.0.67\\wtpwebapps\\cloud_note
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\ddhjy\\.m2\\repository\\org\\springframework\\spring-web\\3.2.8.RELEASE\\spring-web-3.2.8.RELEASE.jar=C\:\\soft01\\apache-tomcat-7.0.67\\wtpwebapps\\cloud_note\\WEB-INF\\lib\\spring-web-3.2.8.RELEASE.jar

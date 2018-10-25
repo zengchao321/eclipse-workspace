@@ -1,0 +1,8 @@
+com.android.ide.eclipse.adt.autoPickTarget=false
+com.android.ide.eclipse.adt.fixLegacyEditors=1
+com.android.ide.eclipse.adt.palette=ICON_TEXT
+com.android.ide.eclipse.adt.sdk=C\:\\soft01\\android-sdk-windows
+com.android.ide.eclipse.adt.xmlEditor=true
+design.palette.flyout.width=179
+design.structure.flyout.width=188
+eclipse.preferences.version=1

@@ -1,0 +1,10 @@
+package cn.tedu.jdbc;
+
+public class Demo01 {
+
+	public static void main(String[] args) throws Exception{
+			Class.forName("orac1e.jdbc.OracleDriver");
+			System.out.println("OK!");		
+	}
+
+}

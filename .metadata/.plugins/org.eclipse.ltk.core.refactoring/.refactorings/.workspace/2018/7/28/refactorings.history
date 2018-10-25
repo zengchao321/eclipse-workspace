@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;sd1609_JDBC&apos;" deleteContents="false" description="Delete resource &apos;sd1609_JDBC&apos;" element1="/sd1609_JDBC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1531450440664"/>
+</session>

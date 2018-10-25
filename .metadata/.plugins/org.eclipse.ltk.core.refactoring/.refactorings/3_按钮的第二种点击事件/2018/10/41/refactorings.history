@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private void callPhone()&apos; from &apos;com.example.phonedail.MainActivity.MyClickListener.onClick()&apos; to &apos;com.example.phonedail.MainActivity.MyClickListener&apos;&#x0D;&#x0A;- Original project: &apos;3_按钮的第二种点击事件&apos;&#x0D;&#x0A;- Method name: &apos;callPhone&apos;&#x0D;&#x0A;- Destination type: &apos;com.example.phonedail.MainActivity.MyClickListener&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;callPhone&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.example.phonedail{MainActivity.java" name="callPhone" replace="false" selection="1157 481" stamp="1539344420924" version="1.0" visibility="2"/>
+</session>

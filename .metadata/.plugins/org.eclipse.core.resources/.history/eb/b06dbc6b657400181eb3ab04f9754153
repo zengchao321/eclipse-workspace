@@ -1,0 +1,42 @@
+package day08;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+/**
+ * 完成记事本功能
+ * 要求：
+ * 程序启动，要求用户输入一个文件名，
+ * 然后创建该文件，之后提示用户开始输入
+ * 内容，并将用户输入的每一行内容都按行写入到
+ * 该文件中，当用户输入“exit”时，退出程序。
+ * 
+ */
+public class Note {
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("请输入文件名");
+		String fileName = scanner.nextLine();
+		
+		FileOutputStream fos = new FileOutputStream(fileName);  
+		OutputStreamWriter osw = new OutputStreamWriter(fos);
+		//自动行刷新
+		PrintWriter pw = new PrintWriter(osw,true);
+		System.out.println("请您开始输入内容：");
+		
+		String line = null;
+		while(true) {
+			line = scanner.nextLine();
+			if("exit".equals(line)) {
+				System.out.println("再见！");
+				break; 
+			}
+			pw.println(line);
+		}
+		pw.close();
+	}
+}

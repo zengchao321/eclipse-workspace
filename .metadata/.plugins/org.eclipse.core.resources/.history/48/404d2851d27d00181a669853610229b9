@@ -1,0 +1,30 @@
+import java.util.Arrays;
+
+public class EmpManager {
+	public static void main(String[] args) {
+		Emp emp = new Emp();
+		emp.name = "葫芦娃" ;
+		emp.age = 24;
+		emp.gender = '男';
+		emp.salary = 7000;
+		emp.chs = emp.name.toCharArray();
+		emp.printInfo();
+	}
+
+}
+class Emp {
+	String name;
+	int age;
+	char gender;
+	double salary;
+	char[] chs;
+
+public void printInfo() {
+	System.out.println("姓名："+name);
+	System.out.println("年龄："+age);
+	System.out.println("性别："+gender);
+	System.out.println("薪水："+salary);
+	System.out.println(Arrays.toString(chs));
+}
+}
+

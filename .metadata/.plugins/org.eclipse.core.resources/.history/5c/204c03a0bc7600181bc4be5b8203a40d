@@ -1,0 +1,52 @@
+package chat;
+
+import java.net.Socket;
+
+/**
+ * 聊天客户端
+ * @author ddhjy
+ *
+ */
+public class Client {
+	/*
+	 * 套接字
+	 * java.net.Socket
+	 * 封装了TCP协议，使用它就可以基于TCP协议
+	 * 进行网络通讯
+	 * Socket是运行在客户端的
+	 */
+	private Socket socket;
+	
+	/**
+	 * 构造方法，初始化客户端
+	 * 实例化Socket的时候需要传入两个参数：
+	 * 1，服务端地址：通过IP地址可以找到服务端那的计算机
+	 * 2，服务端端口：通过端口可以找到服务端计算机上的服务端应用程序
+	 * 实例化Socket的过程就是连接的过程，若远程计算机没有响应就会抛出异常。
+	 * @throws Exception
+	 */
+	public Client()throws Exception {
+		System.out.println("正在连接服务端...");
+		socket = new Socket(
+				"localhost",8088
+				);
+		System.out.println("与服务端建立连接！");
+	}
+	
+	/**
+	 * 启动客户端的方法
+	 */
+	public void start () {
+		
+	}
+	
+	public static void main(String[] args) {
+		try {
+			Client client = new Client();
+			client.start();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("客户端启动失败！");
+		}
+	}
+}

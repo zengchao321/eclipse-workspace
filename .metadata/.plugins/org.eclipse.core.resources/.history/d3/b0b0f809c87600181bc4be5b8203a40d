@@ -1,0 +1,110 @@
+package chat;
+/**
+ * 聊天室服务端
+ * @author ddhjy
+ *
+ */
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Server {
+	/*
+	 * 运行在服务端下的ServerSocket主要负责：
+	 * 1，向系统申请服务端口
+	 * 	客户端就是通过这个端口与之连接的
+	 * 2，监听申请的服务端口，当一个客户端通过
+	 * 该端口尝试建立连接时，ServerSocket会在
+	 * 服务端创建一个Socket与客户端建立连接。
+	 */
+	private ServerSocket server;
+	/**
+	 * 初始化服务端
+	 */
+	public Server ()throws Exception {
+		/*
+		 * 初始化的同时申请服务端口
+		 */
+		server = new ServerSocket(8088);
+	}
+	/**
+	 * 服务端开始工作的方法
+	 */
+	public void start() {
+		try {
+			/*
+			 * ServerSocket的accept方法是一个
+			 * 阻塞方法，其作用是监听服务端口，
+			 * 直到一个客户端连接并创建一个Socket
+			 * 使用该Socket即可与刚连接的客户端进行交互
+			 */
+			while(true) {
+			System.out.println("等待客户端连接...");
+			Socket socket = server.accept();
+			System.out.println("一个客户端连接了！");
+			}
+			/*
+			 * 启动一个线程来完成与该客户端的交互
+			 */
+			ClientHandler handler = new ClientHandler(socket);
+			Thread t = new Thread(handler);
+			t.start();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		try {
+			Server server = new Server();
+			server.start();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("服务端启动失败！");
+		}
+	}
+	
+	/**
+	 * 该线程负责处理一个客户端的交互
+	 * @author ddhjy
+	 *
+	 */
+	class ClientHandler implements Runnable {
+		/*
+		 * 该线程负责处理客户端的Socket
+		 */
+		private Socket socket;
+		
+		public ClientHandler (Socket socket) {
+			this.socket = socket;
+		}
+		
+		public void run() {
+			try {				
+				/*
+				 * Socket提供的方法
+				 * InputStream getInputstream()
+				 * 该方法可以获取一个输入流，从该流读取的数据
+				 * 就是从远端计算机发送过来的
+				 */
+				InputStream in = socket.getInputStream();
+				
+				InputStreamReader isr 
+					= new InputStreamReader(in,"UTF-8");
+				
+				BufferedReader br
+					= new BufferedReader(isr);
+				
+				while(true) {
+					String message = br.readLine();
+				System.out.println("客户端说："+message);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

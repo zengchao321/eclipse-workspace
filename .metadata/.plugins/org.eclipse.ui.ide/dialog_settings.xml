@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\ddhjy\eclipse-workspace\Shoot"/>
+		<item value="C:\Users\ddhjy\Desktop\新建文件夹 (2)\Shoot"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="581" key="DIALOG_WIDTH"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
+		<item value="452" key="DIALOG_HEIGHT"/>
+		<item value="154" key="DIALOG_X_ORIGIN"/>
+		<item value="156" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\ddhjy\Desktop\新建文件夹\ajax-day01\bin"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\ddhjy\Desktop\web-1.zip"/>
+			<item value="C:\Users\ddhjy\Desktop\android_1.zip"/>
+			<item value="C:\Users\ddhjy\Desktop\web-2.zip"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1528010567694" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="158" key="DIALOG_X_ORIGIN"/>
+		<item value="226" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.views.markers.FiltersConfigurationDialog">
+	</section>
+</section>
